@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', path='/css/account.css')}}">
+</head>
+
+<body>
+    <div class="header">
+        <div class="username"></div>
+        <button class="logout_button" id="logout_button">Выйти</button>
+    </div>
+    <div class="tasks">
+        <!--{% for task in tasks%}
+            <div class="account_element" id="element_{{task.id}}">
+                <div class="user_task_header">
+                    <div class="user_task_header_name">{{task.task_name}}</div>
+                    <button class="user_task_header_delete_button" id="delete_{{task.id}}">
+                        <img src="{{url_for('static', path='/pic/trash_can.png')}}" width="100%" alt="удалить">
+                    </button>
+                </div>
+                <div class="user_task_description">{{task.text}}</div>
+            </div>
+        {%endfor%}-->
+        <button class="add_user_task_button" id="add_user_task_button"><img
+                src="{{url_for('static', path='/pic/add_task.png')}}" width="100%" alt="добавить задачу"></button>
+
+    </div>
+    <div class="redactor" id="redactor">
+        <div class="redactor_header" id="redactor_header">
+            <input type="text" class="task_name_redactor" id="task_name_redactor" placeholder="Название">
+        </div>
+        <div class="redactor_body" id="redactor_body">
+            <textarea class="task_text_redactor" id="task_text_redactor" placeholder="Содержимое"></textarea>
+        </div>
+        <div class="redactor_buttons">
+            <button class="redactor_button" id="save_button">Сохранить</button>
+            <button class="redactor_button" id="cancel_button">Отмена</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='/scripts/task.js') }}"></script>
+</body>
+
+</html>

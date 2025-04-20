@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="{{ url_for('static', path='/css/login.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  <div class="form_auth_block">
+    <div class="form_auth_block_content">
+      <p class="form_auth_block_head_text">Авторизация</p>
+      <input class="username" type="text" name="username" placeholder="Введите Ваш username" required>
+      <input class="password" type="password" name="password" placeholder="Введите пароль" required>
+      <div class="buttons">
+        <button class="form_auth_button" id="login_button" type="button" name="login_button">Войти</button>
+        <button class="form_auth_button" id="registration_button" type="button"
+          name="registration_button">Регистрация</button>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', path='/scripts/authentication.js') }}"></script>
+</body>
+
+</html>

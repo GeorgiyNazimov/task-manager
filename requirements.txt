@@ -1,0 +1,8 @@
+fastapi = 0.115.12
+sqlalchemy = 2.0.40
+uvicorn = 0.34.0
+alembic
+dotenv = 0.9.9
+pyjwt = 2.10.1
+psycopg2 = 2.9.10
+jinja2 = 3.1.6

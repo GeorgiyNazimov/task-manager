@@ -1,0 +1,231 @@
+body {
+    margin: 0px;
+    overflow: auto;
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+    align-content: center;
+    background: white;
+    height: 70px;
+    box-shadow: 0px 0px 4px 0px #ababab;
+    position: fixed;
+    z-index: 1;
+}
+
+.logout_button {
+    box-sizing: border-box;
+    border: 0px;
+    align-content: center;
+    background-color: #dddddd;
+    height: 60%;
+    width: 100px;
+    margin: 0px 30px 0px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 0px #717171;
+}
+
+.logout_button:hover {
+    background-color: #bbbbbb;
+    cursor: pointer;
+}
+
+.logout_button:active {
+    background-color: #aaaaaa;
+    box-shadow: inset 0px 0px 4px 0px #2f2f2f;
+    transition: 0.2s;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 95%;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 90px 2% 0px 1%;
+    /* overflow-x: hidden; */
+    align-items: stretch;
+    position: relative;
+    transition: 2s;
+}
+
+.account_element {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    overflow: hidden;
+    word-break: break-word;
+    border-radius: 30px;
+    transition: 1s;
+    position: relative;
+    z-index: 0;
+    background: white;
+    box-shadow: 0px 0px 8px 0px #c7c7c7;
+}
+
+
+.user_task_header {
+    display: block;
+    align-content: center;
+    height: 25%;
+    width: 100%;
+    border-bottom: 1px #bbbbbb solid;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #ffc863;
+    box-shadow: inherit;
+}
+
+.user_task_header_name {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    padding: 0px 0px 0px 25%;
+    overflow: hidden;
+}
+
+.user_task_header_delete_button {
+    float: right;
+    height: 100%;
+    align-content: center;
+    width: 25%;
+    cursor: pointer;
+    padding: 9% 9% 5% 9%;
+    transition: 0.2s;
+    border-radius: 0px 30px 0px 0px;
+    border: 0px;
+    background: none;
+}
+
+.user_task_header_delete_button:hover {
+    background-color: #d7af65;
+    border-radius: 0px 30px 0px 0px;
+    transition: 0.2s;
+}
+
+.user_task_header_delete_button:active {
+    background-color: #d7af65;
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: inset 0px 0px 3px 0px #757575;
+    transition: 0s;
+}
+
+.user_task_description {
+    height: 120px;
+    width: 170px;
+    padding: 15px;
+}
+
+.add_user_task_button {
+    background: none;
+    cursor: pointer;
+    border: 0px;
+    width: 156px;
+    padding: 53px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    /* font-size: 20px; */
+    /* overflow: hidden; */
+    /* border-radius: 30px; */
+    /* transition: 1s; */
+    /* position: relative; */
+    /* z-index: 0; */
+    /* background: white; */
+    /* box-shadow: 0px 0px 8px 0px #c7c7c7; */
+}
+
+.redactor {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 70px;
+    height: 60%;
+    width: 45%;
+    max-width: 900px;
+    min-width: 600px;
+    padding: inherit;
+    position: fixed;
+    z-index: 10;
+    visibility: hidden;
+    justify-self: anchor-center;
+    align-self: anchor-center;
+    box-shadow: 0px 0px 3px 0px #d1d1d1;
+}
+
+.redactor_header {
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd;
+    background: white;
+    border-bottom: none;
+    border-radius: 70px 70px 0px 0px;
+    height: 15%;
+    align-content: center;
+    text-align: center;
+}
+
+.redactor_body {
+    height: 70%;
+    box-sizing: border-box;
+    padding: 5%;
+    border: 1px solid #bdbdbd;
+    background: white;
+}
+
+.task_name_redactor {
+    border: 1px #d1d1d1 solid;
+    border-radius: 15px;
+    width: 60%;
+    height: 35%;
+    box-sizing: border-box;
+    padding: 2px 15px;
+    font-size: 20px;
+}
+
+.task_text_redactor {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px #d1d1d1 solid;
+    padding: 0px 15px 30px;
+    border-radius: 21px;
+    resize: none;
+    font-size: 30px;
+}
+
+.redactor_buttons {
+    box-sizing: border-box;
+    height: 15%;
+    width: 100%;
+    background: white;
+    border-radius: 0px 0px 70px 70px;
+    border: 1px #bdbdbd solid;
+    border-top: 0px;
+    align-content: center;
+    text-align: center;
+}
+
+.redactor_button{
+    border: 0px #bdbdbd solid;
+    border-radius: 10px;
+    height: 60%;
+    width: 20%;
+    font-size: 20px;
+    margin: 0px 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #818181;
+}
+
+.username{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 1rem;
+    align-content: center;
+    border-bottom: 1px gray solid;
+    margin-right: 15px;
+}
